@@ -1,0 +1,3 @@
+Nautilus-Share-Message: 09:41:08.449: Called "net usershare info" but it failed: « net usershare » a retourné l'erreur 255 : net usershare: cannot open usershare directory /var/lib/samba/usershares. Error Aucun fichier ou dossier de ce type
+Please ask your system administrator to enable user sharing.
+
