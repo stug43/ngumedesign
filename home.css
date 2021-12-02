@@ -127,7 +127,6 @@ display: flex;
 
 #portfolio {
 display: grid;
-height: 100%;
 grid-template-columns: repeat(11, 1fr);
 grid-template-rows: repeat(5, 1fr);
 grid-gap: 20px;
@@ -145,8 +144,6 @@ text-align: center;
 background-repeat : no-repeat;
 background-size: cover;
 background-position: center;
-background-attachment: fixed;
--webkit-background-size: cover;
 }
 
 #portfolio div:hover {
