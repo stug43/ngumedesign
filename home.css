@@ -142,6 +142,9 @@ transition: all ease-in-out 300ms;
 justify-content: center;
 align-items: center;
 text-align: center;
+background-repeat : no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 #portfolio div:hover {
@@ -208,36 +211,24 @@ grid-column: span 6;
 
 .first {
 background-image: url("./images/08.jpg");
-background-size: cover;
-background-position: center;
 }
 
 .second {
 background-image: url("./images/05.jpg");
-background-size: cover;
-background-position: center;
 }
 
 .third {
 background-image: url("./images/07.jpg");
-background-size: cover;
-background-position: center;
 }
 
 .fourth {
 background-image: url("./images/06.jpg");
-background-size: cover;
-background-position: center;
 }
 
 .fifth {
 background-image: url("./images/02.jpg");
-background-size: cover;
-background-position: center;
 }
 
 .sixth {
 background-image: url("./images/09.jpg");
-background-size: cover;
-background-position: center;
 }
