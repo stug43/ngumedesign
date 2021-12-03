@@ -4,9 +4,8 @@
 
 html {
     margin : 0;
-    padding : .5rem;
+    padding : 0;
     height : 95vh;
-    background-color : #fff;
 }
 
 body {
@@ -48,43 +47,39 @@ nav li {
     line-height : 2rem;
 }
 
-.navlinks ul li a {
+a {
     text-decoration : none;
-    color : #0a0aa0;
-}
-
-.navlinks ul li a:hover {
-    text-shadow: 7px 5px 5px #0a0aa0;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
     color : #000;
 }
 
+a:hover {
+    color : rgb(125,125,125);
+}
+
 .disabled {
-    color : #bbb !important;
-    cursor : initial !important;
-    text-decoration : none !important;
+    color : #bbb;
+    cursor : initial;
+    text-decoration : none;
 }
 
 .disabled:hover {
-    text-shadow: 0 0 0 #fff !important;
+        color : #bbb;
 }
 
 .solidborder {
     margin : 0 auto;
     height: 0;
     width : 88%;
-    border-top : 2px solid #0a0aa0;
+    border-top : .5px solid #000;
 }
 
-/*  CONTAINER VAUT POUR LA PAGE ACTIVITE ET HOMECONTAINER POUR LA HOMEPAGE  */
-.container {
-    width : 100%;
+.flexcontainer {
+    display : flex;
+    justify-content : center;
 }
 
-.homecontainer {
-    width : 100%;
-}
-
-.container img {
+.homecontainer img {
     display : block;
     max-width : 70%;
     margin : 2rem auto;
@@ -105,35 +100,32 @@ footer span {
     text-align : center;
 }
 
-footer span a {
-    text-decoration : none;
-    color : #0a0aa0;
+
+
+/* ACTIVITE */
+
+article {
+width : 30%;
+margin : 2rem auto;
+background-color : #bdc;
+border-radius : .5rem;
+border : 1px solid #000;
+padding : 2rem;
 }
 
-footer span a:hover {
-    color : #0af;
-}
 
-
-
-
-
-#wrapper {
-height: 90%;
-margin: auto;
-padding: 2%;
-display: flex;
-}
+/* GALERIE */
 
 #portfolio {
 display: grid;
 grid-template-columns: repeat(11, 1fr);
-grid-template-rows: repeat(5, 1fr);
+grid-template-rows: repeat(12, 1fr);
 grid-gap: 20px;
-margin: auto;
+margin: 3rem auto;
 }
 
 #portfolio div {
+border : .5px solid #000;
 display: flex;
 border-radius: .5%;
 opacity: 0.75;
@@ -193,6 +185,11 @@ grid-row: span 3;
 grid-column: span 3;
 }
 
+.std {
+grid-row : span 2;
+grid-column : span 4;
+}
+
 .long {
 grid-row: span 5;
 grid-column: span 2;
@@ -231,3 +228,8 @@ background-image: url("./images/02.jpg");
 .sixth {
 background-image: url("./images/09.jpg");
 }
+
+
+/* CONTACT */
+
+
