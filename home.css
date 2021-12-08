@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    min-width : 950px;
     margin : 0;
     padding : .3rem;
     height : 98vh;
@@ -16,7 +17,7 @@ body {
     flex-direction : column;
     justify-content : space-between;
     border-radius : .3rem;
-    background-color : #eee;
+    background-color : #ccc;
 }
 
 nav {
@@ -232,4 +233,163 @@ background-image: url("./images/09.jpg");
 
 /* CONTACT */
 
+/* COMPONENTS */
 
+.components_wrapper {
+max-width : 30%;
+margin : 0 1rem;
+}
+
+button {
+display : block;
+padding : .3rem 1rem;
+font-size : 1.2rem;
+border-radius : .4rem;
+margin : .3rem auto;
+}
+
+button:hover {
+cursor : pointer;
+}
+
+.card {
+border : 2px solid ;
+border-radius : .4rem;
+display : flex;
+flex-direction : column;
+align-items : center;
+padding : .5rem;
+margin : .5rem auto;
+}
+
+.card_header {
+width : 100%;
+display : flex;
+align-items : center;
+}
+
+.card_header img {
+position : absolute;
+border-radius : .2rem;
+border : 1px solid green;
+}
+
+.card h5 {
+margin : .5rem auto;
+font-size : 1.3rem;
+}
+
+ul {
+border-radius : .2rem;
+list-style-type : none;
+padding : 0;
+}
+
+ul.primary li {
+padding : .2rem;
+}
+
+ul.secondary li {
+padding : .2rem;
+}
+
+input, textarea {
+margin : .5rem;
+display : block;
+border : 1px solid green;
+resize : none;
+}
+
+.popover, .rightpopover{
+border-radius : .2rem;
+display : none;
+position : absolute;
+background-color : green;
+color : #fff;
+padding : 1rem;
+}
+
+.toppopover, .leftpopover {
+border-radius : .2rem;
+display : none;
+background-color : green;
+color : #fff;
+padding : 1rem;
+width : 300px;
+}
+
+.toppopover_div, .leftpopover_div{
+width : 79.45px;
+display : flex;
+flex-direction : column-reverse;
+position : relative;
+}
+
+.popover_link:hover + .popover, .popover_link:hover + br + .popover {
+display : block;
+border : 1px solid purple;
+}
+
+.toppopover_link, .leftpopover_link {
+position : relative;
+z-index : -1;
+}
+
+.toppopover_div:hover, .leftpopover_div:hover {
+cursor : pointer;
+}
+
+.toppopover_div:hover > .toppopover{
+display : block;
+position : absolute;
+bottom : 100%;
+border : 1px solid purple;
+}
+
+.leftpopover_div:hover > .leftpopover {
+display : inline-block;
+position : absolute;
+top : 0;
+right : 100%;
+border : 1px solid purple;
+}
+
+
+.popover_link:hover + .rightpopover {
+display : inline-block;
+border : 1px solid purple;
+}
+
+.primary {
+color : #fff;
+background-color : green;
+border : 2px solid #fff;
+}
+
+button.primary:hover {
+color : green;
+background-color : #fff;
+border : 2px solid green;
+}
+
+ul.primary li:hover {
+color : green;
+background-color : #fff;
+}
+
+.secondary {
+color : green;
+background-color : #fff;
+border : 2px solid green;
+}
+
+button.secondary:hover {
+color : #fff;
+background-color : green;
+border : 2px solid #fff;
+}
+
+ul.secondary li:hover {
+color : #fff;
+background-color : green;
+}
